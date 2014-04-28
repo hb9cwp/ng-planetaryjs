@@ -13,7 +13,7 @@
 				}			
 
 			};
-        }])
+		}])
 
 		.directive('planetaryjs', ['service', function (service) {
 
@@ -92,7 +92,7 @@
 				    				    				                       
 					scope.fetchIt = function(type, result) {
 					    
-                     	//ngProgress.start();
+						//ngProgress.start();
 
 						useragent.asyncFetchAgents( type , scope.results).then(function(d) {
 						    scope.results = [];
