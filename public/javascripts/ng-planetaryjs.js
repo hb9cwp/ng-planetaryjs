@@ -1,7 +1,8 @@
-(function (angular) {
+(function (define, angular) {
 'use strict';
- 
-	angular.module('ngPlanetaryJs', [])		
+
+ define(['planetaryjs'], function () {
+	angular.module('ngPlanetaryJs', [])
 		.directive('planetaryjs', [function (service) {
 
 			return {
@@ -104,8 +105,9 @@
 							}
 						});
 					};
-				};								   				    				                      				
+				};
 			}
 		};
 	}]);
- })(angular);
+ });
+})(define, angular);
